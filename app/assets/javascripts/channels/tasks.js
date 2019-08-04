@@ -1,7 +1,6 @@
 $(function() {
-  // The taskHtml method takes in a JavaScript representation
-  // of the task and produces an HTML representation using
-  // <li> tags
+  
+
   function taskHtml(task) {
     var checkedStatus = task.done ? "checked" : "";
     var liClass = task.done ? "completed" : "";
@@ -16,10 +15,8 @@ $(function() {
     return liElement;
   }
 
-  // toggleTask takes in an HTML representation of the
-  // an event that fires from an HTML representation of
-  // the toggle checkbox and  performs an API request to toggle
-  // the value of the `done` field
+ 
+
   function toggleTask(e) {
     var itemId = $(e.target).data("id");
 
